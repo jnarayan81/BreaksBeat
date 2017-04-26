@@ -65,7 +65,7 @@ my @remainingIds = grep { $_ ne '' } @allIds_sorted; #Remove the spaced from rem
 #foreach my $v (@remainingIds) { print "$v --\n"; }
 
 for(my $i = 0; $i <= $#remainingIds; $i++){
-	my @name = split('\:', $remainingIds[$i]); print "$name[-1]\t$remainingIds[$i]\n";
+	my @name = split('\:', $remainingIds[$i]); #print "$name[-1]\t$remainingIds[$i]\n";
 	my $loc=$name[-1];
 	my $tabN;
 	if ($loc) { $tabN="\t" x ($loc-1); }
